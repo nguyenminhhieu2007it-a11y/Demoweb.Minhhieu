@@ -1,0 +1,36 @@
+<!DOCTYPE.html>
+<html lang="en">    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <body>
+        <h1 class="b1">Bài thực hành CSS</h1>
+        <h2>Định dạng CSS</h2>
+        <div class="container">
+            <img src="https://topdev.vn/blog/wp-content/uploads/2021/06/trang-html.jpg" alt="avatar">
+        </div>
+h2{
+    color:rgba(3, 148, 232, 0.806);
+    background-color:rgba(3, 148, 232, 0.414);
+}
+.b1{
+    color:rgba(3, 148, 232, 0.806);
+}
+table{
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.container{
+    flex:1;
+}
+img{
+    width: 100%;
+    height: 100%;
+}

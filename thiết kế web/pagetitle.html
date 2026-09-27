@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Page Layout</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+        body {
+            background-color: #6b7d70;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .container-fluid {
+            flex: 1;
+        }
+        .row {
+            min-height: 100%;
+        }
+        .header {
+            background-color: #d4f542;
+            padding: 20px;
+        }
+        .header h1 {
+            color: #333;
+            margin: 0;
+        }
+        .sidebar-left {
+            padding: 0 !important;
+        }
+        .sidebar-left .nav {
+            padding: 15px;
+        }
+        .sidebar-left .nav-link {
+            display: block;
+            background-color: #f5c6cb;
+            color: #a03040;
+            text-decoration: none;
+            margin-bottom: 6px;
+            padding: 6px 10px;
+            font-size: 14px;
+        }
+        .sidebar-left .nav-link:hover {
+            background-color: #f1b0b7;
+        }
+        .sidebar-text {
+            color: #e0e0e0;
+            font-size: 13px;
+            margin-top: 15px;
+        }
+        .main-content {
+            background-color: #e8f5e9;
+            padding: 20px;
+        }
+        .footer {
+            background-color: #1a1a1a;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <div class="header">
+        <h1>Page title</h1>
+    </div>
+
+    <div class="container-fluid flex-grow-1 p-0">
+        <div class="row g-0 h-100">
+
+            <!-- Sidebar trai -->
+            <div class="col-md-2 sidebar-left h-100">
+                <ul class="nav flex-column mb-0">
+                    <li class="nav-item"><a href="#" class="nav-link">Link 1</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Link 2</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Link 3</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Link 4</a></li>
+                </ul>
+                <p class="sidebar-text px-3">
+                    Aenean varius nunc vitae tortor iaculis eget bibendum lacus commodo.
+                    Ut eu eros nisl feugiat interdum a vel sem. Cras varius, dolor id
+                    ultricies ultrices, metus justo iaculis justo, vitae accumsan est
+                    enim id est. Sed sit amet neque a nunc sollicitudin dapibus.
+                    Sed adipiscing iaculis nibh vel molestie.
+                </p>
+            </div>
+
+            <!-- Noi dung chinh -->
+            <div class="col-md-8 main-content py-3 h-100">
+                <h2>Page title</h2>
+                <p>
+                    Proin pretium, massa ut lacinia lacinia, magna purus condimentum leo,
+                    quis elementum sapien sem nec velit. Vivamus tortor justo, ultrices
+                    vitae sodales nec, tincidunt ut augue. Nam consectetur est non augue
+                    imperdiet vehicula. Ut nec imperdiet magna. Integer eleifend mi quis
+                    nisl tempus ultrices. Suspendisse turpis diam, lacinia id eleifend nec,
+                    consequat ut neque. Quisque ut amet lectus enim. Quisque diam justo,
+                    posuere malesuada aliquet nec, molestie id libero. Fusce sit amet
+                    nulla consectetur mi lobortis laoreet.
+                </p>
+                <p>
+                    Aenean varius nunc vitae tortor iaculis eget bibendum lacus commodo.
+                    Ut eu eros non nisl feugiat interdum a vel sem. Cras varius, dolor id
+                    ultricies ultrices, metus nulla iaculis justo, vitae accumsan est enim
+                    id est. Sed sit amet neque a nunc sollicitudin dapibus. Sed adipiscing
+                    iaculis nibh vel molestie.
+                </p>
+            </div>
+
+            <!-- Sidebar phai -->
+            <div class="col-md-2 py-3 h-100">
+                <p class="sidebar-text">
+                    Proin pretium, massa ut lacinia lacinia, magna purus condimentum leo,
+                    quis elementum sapien sem nec velit. Vivamus tortor justo, ultrices
+                    vitae sodales nec, tincidunt ut augue. Nam consectetur est non augue
+                    imperdiet magna. Integer eleifend mi quis nisl tempus ultrices.
+                    Suspendisse turpis diam, lacinia id eleifend nec, consequat ut neque.
+                    Quisque ut amet lectus enim. Quisque diam justo, posuere malesuada
+                    aliquet nec, molestie id libero. Fusce sit amet nulla consectetur
+                    mi lobortis laoreet.
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        Footer content
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

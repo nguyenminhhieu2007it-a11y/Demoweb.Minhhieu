@@ -1,0 +1,22 @@
+/*<body>: Margin 0px, Padding 0px, Background-color #CCCCCC*/
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #ccc;
+}
+
+section{
+    margin-left: 20px;
+}
+
+article header h1{
+    font-size: 28px;
+}
+
+article header p{
+    font-style: italic;
+}
+
+article > p{
+    font-size: 24px;
+}

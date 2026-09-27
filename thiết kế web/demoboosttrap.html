@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bootstrap demo</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar border">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand">LOGO</a>
+            <div class="d-flex gap-4">
+                <a href="#" class="nav-link">Home</a>
+                <a href="#" class="nav-link">Product</a>
+                <a href="#" class="nav-link">About</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Grid: 3 cot -->
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-12 col-md-4 col-lg-3">
+                Cot 1
+            </div>
+            <div class="col-12 col-md-4 col-lg-3">
+                Cot 2
+            </div>
+            <div class="col-12 col-md-4 col-lg-3">
+                Cot 3
+            </div>
+        </div>
+    </div>
+
+    <!-- Tieu de -->
+    <h1 class="display-4 text-center">Hello World</h1>
+    <p class="text-center fst-italic">Hello Bootstrap-5</p>
+
+    <!-- Buttons -->
+    <div class="container text-center">
+        <button class="btn btn-primary">Primary</button>
+        <button class="btn btn-danger">Alert</button>
+        <button class="btn btn-success">Done</button>
+    </div>
+
+    <!-- Text mau -->
+    <div class="container">
+        <p class="text-primary">Primary</p>
+        <p class="text-danger">Danger</p>
+        <p class="text-success">Success</p>
+    </div>
+
+    <!-- Background -->
+    <div class="bg-primary text-white p-3">
+        Background hello
+    </div>
+
+    <!-- Card -->
+    <div class="container mt-3">
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">Sinh vien</h5>
+                <p class="card-text">Thong tin chi tiet</p>
+                <a href="#" class="btn btn-primary">Xem</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Form dang nhap -->
+    <div class="container mt-4">
+        <form>
+            <div class="mb-3">
+                <label class="form-label">Email</label>
+                <input type="email" class="form-control">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Password</label>
+                <input type="password" class="form-control">
+            </div>
+            <button type="submit" class="btn btn-primary">Dang nhap</button>
+        </form>
+
+        <div class="alert alert-success mt-3">
+            Dang nhap thanh cong!
+        </div>
+        <div class="alert alert-danger">
+            Dang nhap that bai
+        </div>
+    </div>
+
+    <!-- Nut mo Modal -->
+    <div class="container mb-4">
+        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+            Mo Carousel
+        </button>
+    </div>
+
+    <!-- Carousel -->
+    <div class="container mb-5">
+        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="1000">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./images/img_1.jpg" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/img_2.jpg" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/img_3.jpg" class="d-block w-100">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Thong bao</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    Day la noi dung Modal.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Dong</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

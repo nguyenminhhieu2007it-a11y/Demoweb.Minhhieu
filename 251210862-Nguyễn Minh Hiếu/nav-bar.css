@@ -1,0 +1,30 @@
+/* Thẻ <body> */
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: #CCCCCC;
+}
+
+/* Thẻ <ul> cho danh sách chưa sắp xếp */
+nav ul {
+  background-color: #444;
+  text-align: center;
+  padding: 0px;
+  margin: 0px;
+  list-style-type: none;
+}
+
+/* Thẻ <li> cho mục danh sách */
+nav ul li {
+  display: inline-block;
+  font-size: 24px;
+  line-height: 40px;
+  height: 40px;
+  padding: 20px;
+}
+
+/* Thẻ <a> cho liên kết */
+nav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+}

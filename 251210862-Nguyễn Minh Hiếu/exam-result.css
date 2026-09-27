@@ -1,0 +1,22 @@
+table {
+    width: 650px;
+    border-collapse: collapse;
+}
+
+table, td, th {
+    border: 1px solid #000;
+}
+
+th {
+    font-size: 32px;
+}
+
+td {
+    font-size: 30px;
+    padding-left: 5px;
+}
+
+td.result {
+    text-align: right;
+    padding-right: 5px;
+}

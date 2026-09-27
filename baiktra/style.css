@@ -1,0 +1,148 @@
+/* ============================
+   CSS CƠ BẢN CHO CẢ TRANG
+   ============================ */
+body {
+	margin: 0;
+	font-family: Arial, sans-serif;
+	background-color: #f2f2f2;
+}
+
+.container {
+	width: 1000px;
+	margin: 0 auto;
+	background-color: #ffffff;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+/* ============================
+   PHẦN HEADER - Câu 2: màu chữ, màu nền header
+   ============================ */
+.header {
+	background-image: linear-gradient(to right, #b9ecea, #2fa6a4);
+	color: #14508f;
+	padding: 15px 20px;
+}
+
+.header h1 {
+	margin: 0;
+	font-size: 28px;
+}
+
+.header p {
+	margin: 5px 0 15px 0;
+	font-style: italic;
+}
+
+/* ============================
+   MENU + Ô TÌM KIẾM - Câu 2: sắp xếp cùng 1 hàng
+   ============================ */
+.menu {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #2f8f8d;
+}
+
+.menu ul {
+	display: flex;
+}
+
+.menu ul li a {
+	display: block;
+	padding: 10px 20px;
+	color: #ffffff;
+}
+
+.menu ul li a:hover {
+	background-color: #ffffff;
+	color: #2f8f8d;
+}
+
+.search-box {
+	display: flex;
+	margin-right: 10px;
+}
+
+.search-box input {
+	padding: 6px;
+	width: 160px;
+	border: none;
+}
+
+.search-box button {
+	padding: 6px 12px;
+	border: none;
+	background-color: #f0a63b;
+	color: #ffffff;
+	cursor: pointer;
+}
+
+/* ============================
+   NỘI DUNG CHÍNH - Câu 2: content trái, sidebar phải
+   ============================ */
+.main {
+	display: flex;
+	padding: 20px;
+}
+
+.content {
+	width: 70%;
+}
+
+.content h1 {
+	color: #2f8f8d;
+	font-size: 20px;
+}
+
+.content p {
+	line-height: 1.6;
+	text-align: justify;
+	white-space: pre-line;
+}
+
+.menu-right {
+	width: 30%;
+	padding-left: 20px;
+}
+
+.panel {
+	margin-bottom: 15px;
+	border: 1px solid #dddddd;
+}
+
+.panel-heading {
+	background-color: #3aa8a6;
+	color: #ffffff;
+	padding: 8px 10px;
+	font-weight: bold;
+}
+
+.panel-body {
+	padding: 8px 10px;
+}
+
+.panel-body li {
+	list-style: disc;
+	margin-left: 18px;
+	padding: 3px 0;
+}
+
+/* ============================
+   Câu 4: RESPONSIVE
+   ============================ */
+@media (max-width: 768px) {
+	.container { width: 100%; }
+	.main { flex-direction: column; }
+	.content, .menu-right { width: 100%; padding-left: 0; }
+	.menu ul li { display: block; }
+}
